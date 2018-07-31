@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6D47BE1-7122-4FA0-B21F-A6F4C906DA2D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kosal.sinnvoll.console</RootNamespace>
+    <AssemblyName>kosal.sinnvoll.console</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="forms\aboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\aboutBox.Designer.cs">
+      <DependentUpon>aboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\customInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\customInputForm.Designer.cs">
+      <DependentUpon>customInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\excelInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\excelInputForm.Designer.cs">
+      <DependentUpon>excelInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\modemDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\modemDetails.Designer.cs">
+      <DependentUpon>modemDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\parentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\parentForm.Designer.cs">
+      <DependentUpon>parentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\screenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\screenForm.Designer.cs">
+      <DependentUpon>screenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\transportSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\transportSettings.Designer.cs">
+      <DependentUpon>transportSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\transportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\transportViewer.Designer.cs">
+      <DependentUpon>transportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="library\parentFormManager.cs" />
+    <Compile Include="library\publisherManager.cs" />
+    <Compile Include="library\screenManager.cs" />
+    <Compile Include="library\transportManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="statics\AppSettings.cs" />
+    <EmbeddedResource Include="forms\aboutBox.resx">
+      <DependentUpon>aboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\customInputForm.resx">
+      <DependentUpon>customInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\excelInputForm.resx">
+      <DependentUpon>excelInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\modemDetails.resx">
+      <DependentUpon>modemDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\parentForm.resx">
+      <DependentUpon>parentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\screenForm.resx">
+      <DependentUpon>screenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\transportSettings.resx">
+      <DependentUpon>transportSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\transportViewer.resx">
+      <DependentUpon>transportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\kosal.common\kosal.common.csproj">
+      <Project>{532F3CFA-2182-4C46-873A-D7F8569EE011}</Project>
+      <Name>kosal.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\kosal.sinnvoll.comm\kosal.sinnvoll.comm.csproj">
+      <Project>{0E19F671-E33A-42F5-A446-03A9C56257E7}</Project>
+      <Name>kosal.sinnvoll.comm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\kosal.sinnvoll.dataAccess\kosal.sinnvoll.dataAccess.csproj">
+      <Project>{58AD164D-1FF5-4040-AAAE-DAA64274113C}</Project>
+      <Name>kosal.sinnvoll.dataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\kosal.sinnvoll.server\kosal.sinnvoll.server.csproj">
+      <Project>{270C4C13-840B-495A-B417-C975B22791C6}</Project>
+      <Name>kosal.sinnvoll.server</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
